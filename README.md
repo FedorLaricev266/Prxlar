@@ -1,20 +1,21 @@
 # PRXLAR Portal
 
-Статический портал PRXLAR для GitHub Pages: главная, релизы ARMv7/ARM64, исходники, предложения и демо-аккаунт.
+Статический портал PRXLAR для GitHub Pages: главная, релизы ARMv7/ARM64, исходники и предложения.
 
 ## Релизы
 
-Файлы APK и ZIP должны лежать в папке `releases/` рядом с `index.html`. Сайт уже ожидает:
+Кнопки APK ведут на прямые файлы в GitHub-репозитории `FedorLaricev266/Tg-proxy`:
 
-- `PRXLAR_arm64_release.apk`
-- `PRXLAR_armv7_release.apk`
-- `PRXLAR_fast_tabs_source.zip`
+- `PRXLAR V2.1 arm8.apk` — ARM64-v8a
+- `PRXLAR V2.1 arm7.apk` — armeabi-v7a
 
-Регистрация и вход работают в демо-режиме через `localStorage`. Для реальных пользователей, ролей администратора, загрузки релизов и базы предложений нужен backend (например Supabase/Firebase или отдельный API).
+Исходники сайта и проекта можно скачать из локальной папки `releases/`.
+
+GitHub Pages не предоставляет сервер или базу данных, поэтому регистрация, хранилище пользователей и админка удалены. Предложения принимаются через Telegram: https://t.me/Larchikof. Для настоящих аккаунтов нужен отдельный backend (например Supabase/Firebase или API).
 
 ## Перед публикацией
 
-Замени ссылки `your_username` и `your_page` в `index.html` на свои Telegram, Boosty и другие страницы донатов.
+В `index.html` уже указаны прямые GitHub-ссылки на оба APK, QR-код и реквизиты для поддержки, а также Telegram разработчика `@Larchikof`. Регистрации, авторизации и админки на статическом сайте нет. APK скачиваются напрямую с GitHub без промежуточной страницы.
 
 ## GitHub Pages
 
